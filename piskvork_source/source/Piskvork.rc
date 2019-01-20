@@ -1,0 +1,612 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+1                       ICON    DISCARDABLE     "piskvork.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    106
+        MENUITEM "&Save...",                    107
+        MENUITEM SEPARATOR
+        MENUITEM "&Keyboard shortcuts...",      230
+        POPUP "Language"
+        BEGIN
+            MENUITEM ".",                           29999
+        END
+        MENUITEM "&Delete settings",            105
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       103
+    END
+    POPUP "&Game"
+    BEGIN
+        MENUITEM "&New game",                   101
+        MENUITEM "&Reset score",                204
+        MENUITEM SEPARATOR
+        MENUITEM "&Pause",                      108
+        MENUITEM "&Continue",                   209
+        MENUITEM SEPARATOR
+        MENUITEM "&Tournament...",              220
+        MENUITEM "Re&sult",                     224
+        MENUITEM SEPARATOR
+        MENUITEM "Conn&ect...",                 223
+        MENUITEM "&Disconnect",                 222
+        MENUITEM "Send &message",               227
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 104
+    END
+    POPUP "&Move"
+    BEGIN
+        MENUITEM "&Undo 2x",                    210
+        MENUITEM "&Redo 2x",                    211
+        MENUITEM "U&ndo",                       201
+        MENUITEM "Re&do",                       202
+        MENUITEM SEPARATOR
+        MENUITEM "&Beginning",                  205
+        MENUITEM "&End",                        208
+        MENUITEM "&Go to move...",              212
+        MENUITEM SEPARATOR
+        MENUITEM "&Show last move",             203
+        MENUITEM "&Log window",                 221
+    END
+    POPUP "&Players"
+    BEGIN
+        MENUITEM "&One player",                 402
+        MENUITEM "&Two players",                401
+        MENUITEM "&Demo",                       403
+        MENUITEM SEPARATOR
+        MENUITEM "S&wap players",               206
+        MENUITEM SEPARATOR
+        MENUITEM "&Harder",                     404
+        MENUITEM "&Easier",                     405
+        MENUITEM SEPARATOR
+        MENUITEM "&Settings...",                406
+    END
+    POPUP "&Skin"
+    BEGIN
+        MENUITEM "&Next",                       302
+        MENUITEM "&Previous",                   303
+        MENUITEM "&Open...",                    301
+        MENUITEM "&Refresh",                    304
+        MENUITEM SEPARATOR
+        MENUITEM "Flip &horizontally",          305
+        MENUITEM "Flip &vertically",            306
+        MENUITEM "Flip &diagonally",            307
+        MENUITEM SEPARATOR
+        MENUITEM "&Swap symbols",               207
+        MENUITEM "Show &toolbar",               309
+        MENUITEM "&Customize toolbar",          310
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Readme",                     120
+        MENUITEM "&What's new",                 250
+        MENUITEM "&About...",                   121
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+3 ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "L",            221,                    VIRTKEY, CONTROL, NOINVERT
+    "O",            106,                    VIRTKEY, CONTROL, NOINVERT
+    "S",            107,                    VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         404,                    VIRTKEY, NOINVERT
+    VK_END,         208,                    VIRTKEY, NOINVERT
+    VK_F12,         220,                    VIRTKEY, NOINVERT
+    VK_F2,          101,                    VIRTKEY, NOINVERT
+    VK_F3,          104,                    VIRTKEY, NOINVERT
+    VK_F4,          406,                    VIRTKEY, NOINVERT
+    VK_F5,          203,                    VIRTKEY, NOINVERT
+    VK_F6,          303,                    VIRTKEY, NOINVERT
+    VK_F7,          302,                    VIRTKEY, NOINVERT
+    VK_F8,          301,                    VIRTKEY, NOINVERT
+    VK_F9,          206,                    VIRTKEY, NOINVERT
+    VK_HOME,        205,                    VIRTKEY, NOINVERT
+    VK_LEFT,        210,                    VIRTKEY, NOINVERT
+    VK_NEXT,        202,                    VIRTKEY, NOINVERT
+    VK_PRIOR,       201,                    VIRTKEY, NOINVERT
+    VK_RIGHT,       211,                    VIRTKEY, NOINVERT
+    VK_SPACE,       209,                    VIRTKEY, NOINVERT
+    VK_SUBTRACT,    405,                    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+OPTIONS DIALOG DISCARDABLE  37, 17, 278, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 9, "MS Sans Serif"
+BEGIN
+    CTEXT           "&Width:",511,5,9,29,8
+    EDITTEXT        103,38,6,21,14,ES_NUMBER
+    CTEXT           "&Height:",512,68,9,29,8
+    EDITTEXT        104,101,6,21,14,ES_NUMBER
+    CONTROL         "&Automatic opening moves",545,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,29,123,10
+    GROUPBOX        "",IDC_STATIC,4,43,132,36
+    CONTROL         "five or mo&re stones win",555,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,52,88,10
+    CONTROL         "e&xactly five stones win",556,"Button",
+                    BS_AUTORADIOBUTTON,11,65,87,10
+    GROUPBOX        "",IDC_STATIC,4,80,132,36
+    CONTROL         "singl&e game",559,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,11,89,88,10
+    CONTROL         "c&ontinuous game",560,"Button",BS_AUTORADIOBUTTON,11,
+                    102,87,10
+    GROUPBOX        "",IDC_STATIC,4,121,132,89,WS_GROUP
+    CTEXT           "H&ilight duration :",513,7,133,70,8
+    EDITTEXT        108,82,130,30,14,ES_NUMBER
+    LTEXT           "ms",536,117,133,17,8
+    CONTROL         "&Show coordinates",510,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,149,119,12
+    CONTROL         "&Coordinates start from 1",518,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,164,119,12
+    CONTROL         "Divide move &number by two",516,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,179,119,12
+    CONTROL         "Move number starts &from 1",546,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,194,119,12
+    GROUPBOX        "",IDC_STATIC,141,0,132,129
+    CONTROL         "Chec&k timeout for computer",515,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,10,119,10
+    CONTROL         "Check timeout for h&uman",517,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,25,119,10
+    RTEXT           "&Tolerance:",514,149,43,48,8
+    EDITTEXT        109,203,41,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",535,239,43,28,8
+    RTEXT           "&Memory:",519,149,60,48,8
+    EDITTEXT        111,203,59,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "MB",IDC_STATIC,239,61,24,8
+    CONTROL         "Suspend opponent's &pbrain",544,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,79,119,10
+    CONTROL         "Debug pbrains",658,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,94,119,10
+    LTEXT           "Process priority:",547,148,113,59,8
+    COMBOBOX        120,211,111,57,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Logging",543,141,133,132,66
+    CONTROL         "messa&ge commands",540,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,146,103,10
+    CONTROL         "de&bug commands",541,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,159,103,10
+    CONTROL         "mo&ves coordinates and time",542,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,151,172,103,10
+    CONTROL         "clear after ever&y game",509,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,185,103,10
+    CONTROL         "&Log pipe protocol to a file",549,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,151,204,123,10
+    LTEXT           "AI &data folder:",557,10,224,54,8
+    EDITTEXT        122,68,221,170,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",124,242,221,14,14
+    CONTROL         "Send INFO evaluate x,y",548,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | WS_TABSTOP,167,241,110,10
+    DEFPUSHBUTTON   "OK",1,10,244,51,16,WS_GROUP
+    PUSHBUTTON      "Cancel",2,82,244,51,16
+    CONTROL         "Ignore errors from AI",659,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,254,110,10
+END
+
+ABOUT DIALOG DISCARDABLE  52, 18, 114, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CTEXT           "(C) 2000-2005  Petr Lastovicka",501,4,50,104,10
+    CTEXT           "Version",503,35,24,28,9
+    CTEXT           "Piskvorky",504,36,6,40,9
+    ICON            1,-1,12,20,20,20
+    PUSHBUTTON      "OK",IDOK,39,88,35,14
+    ICON            1,-1,85,20,20,20
+    PUSHBUTTON      "http://web.quick.cz/lastp",502,3,66,106,13
+    LTEXT           "",101,66,24,12,8
+END
+
+PLAYERS DIALOG DISCARDABLE  0, 0, 217, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Players"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Player 1",520,7,5,203,74
+    CONTROL         "Computer",522,"Button",BS_AUTORADIOBUTTON,19,17,84,10
+    CONTROL         "Human",523,"Button",BS_AUTORADIOBUTTON,110,17,84,10
+    EDITTEXT        101,13,33,171,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",200,189,33,16,14
+    RTEXT           "&Turn:",526,12,58,37,8
+    EDITTEXT        103,55,56,35,14,ES_AUTOHSCROLL
+    LTEXT           "s",533,95,58,14,8
+    RTEXT           "&Match:",528,112,58,34,8
+    EDITTEXT        105,151,56,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "s",531,191,58,13,8
+    GROUPBOX        "Player 2",521,7,91,203,96
+    CONTROL         "Computer",524,"Button",BS_AUTORADIOBUTTON,19,104,84,10
+    CONTROL         "Human",525,"Button",BS_AUTORADIOBUTTON,110,104,84,10
+    EDITTEXT        102,13,120,171,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",201,189,120,16,14
+    CONTROL         "Both players have the &same time limits",530,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,146,187,10
+    RTEXT           "T&urn:",527,12,166,37,8
+    EDITTEXT        104,55,163,35,14,ES_AUTOHSCROLL
+    LTEXT           "s",534,95,166,14,8
+    RTEXT           "M&atch:",529,112,166,34,8
+    EDITTEXT        106,151,163,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "s",532,191,166,13,8
+    DEFPUSHBUTTON   "OK",IDOK,39,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,197,50,14
+END
+
+TOURNAMENT DIALOG DISCARDABLE  0, 0, 321, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tournament"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,251,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,251,50,14
+    PUSHBUTTON      "Continue",569,148,251,50,14
+    LTEXT           "&Players  (EXE or ZIP files):",563,15,9,95,8
+    EDITTEXT        101,7,22,190,97,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "A&dd",564,121,4,50,14
+    GROUPBOX        "",IDC_STATIC,7,123,190,58
+    CONTROL         "Save &boards",565,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    16,133,86,10
+    CONTROL         "&Save messages",567,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,108,133,84,10
+    EDITTEXT        106,13,148,159,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",107,176,148,16,14
+    CONTROL         "&Gomotur format (*.rec)",572,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,167,92,10
+    CONTROL         "Onl&y losses",573,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    WS_TABSTOP,114,167,78,10
+    RTEXT           "&Repeat count:",561,201,7,71,8
+    EDITTEXT        102,279,4,29,14,ES_NUMBER
+    RTEXT           "Games cou&nt:",562,201,25,71,8
+    EDITTEXT        115,279,22,29,14,ES_NUMBER
+    RTEXT           "Max. t&ie repeats:",577,201,43,71,8
+    EDITTEXT        112,279,40,29,14,ES_NUMBER
+    RTEXT           "Paus&e:",574,202,64,44,8
+    EDITTEXT        158,254,61,35,14,ES_AUTOHSCROLL
+    LTEXT           "s",534,294,64,19,8
+    GROUPBOX        "",IDC_STATIC,204,78,116,37
+    CONTROL         "To&urnament",570,"Button",BS_AUTORADIOBUTTON,208,87,108,
+                    10
+    CONTROL         "The &first AI against others",571,"Button",
+                    BS_AUTORADIOBUTTON,208,100,108,10
+    RTEXT           "&Turn:",526,202,123,44,8
+    EDITTEXT        153,254,121,35,14,ES_AUTOHSCROLL
+    LTEXT           "s",533,294,124,19,8
+    RTEXT           "M&atch:",528,202,141,44,8
+    EDITTEXT        105,254,139,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "s",531,294,141,19,8
+    RTEXT           "Toleran&ce:",514,202,160,44,8
+    EDITTEXT        109,254,158,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",535,294,160,22,8
+    RTEXT           "&Memory:",519,202,178,44,8
+    EDITTEXT        111,254,176,35,14,ES_NUMBER
+    LTEXT           "MB",IDC_STATIC,294,178,19,8
+    CONTROL         "Automatic opening mo&ves",545,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,208,196,105,10
+    GROUPBOX        "",IDC_STATIC,209,211,103,34
+    CONTROL         "&Local computer",575,"Button",BS_AUTORADIOBUTTON,217,
+                    219,90,10
+    CONTROL         "Networ&k",576,"Button",BS_AUTORADIOBUTTON,217,232,88,10
+    CTEXT           "TCP/IP  p&ort:",592,204,252,64,8
+    EDITTEXT        110,272,249,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Command to e&xecute after each game:",578,7,188,183,8
+    EDITTEXT        113,7,200,190,14,ES_AUTOHSCROLL
+    LTEXT           "Command to execute &when a tournament finished:",579,7,
+                    218,182,8
+    EDITTEXT        114,7,230,190,14,ES_AUTOHSCROLL
+END
+
+RESULT DIALOG DISCARDABLE  0, 0, 197, 182
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Tournament result"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,161,41,14
+    PUSHBUTTON      "&Table",606,64,161,44,14
+    PUSHBUTTON      "&Copy to clipboard",566,119,161,71,14
+    EDITTEXT        101,7,4,183,150,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+END
+
+GOTO DIALOG DISCARDABLE  0, 0, 151, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go to move"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Move number:",580,7,10,79,8
+    EDITTEXT        101,94,7,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,16,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,34,50,14
+END
+
+CLIENT DIALOG DISCARDABLE  0, 0, 186, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Client"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,2,172,36,WS_GROUP
+    CONTROL         "Connect to an AIs &tournament",597,"Button",
+                    BS_AUTORADIOBUTTON,13,11,158,10
+    CONTROL         "Play with another &human over the internet",598,"Button",
+                    BS_AUTORADIOBUTTON,13,25,158,10
+    LTEXT           "&Server:",591,7,61,29,8
+    EDITTEXT        101,42,59,137,14,ES_AUTOHSCROLL
+    LTEXT           "TCP/IP &port:",592,7,83,51,8
+    EDITTEXT        110,63,81,40,14,ES_NUMBER
+    LTEXT           "&Download AI to folder:",590,7,109,164,8
+    EDITTEXT        103,7,123,151,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",107,163,123,16,14
+    DEFPUSHBUTTON   "Connect",IDOK,30,152,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,152,50,14
+END
+
+DISCONNECT DIALOG DISCARDABLE  0, 0, 125, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Disconnect"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,50,50,14
+    CONTROL         "&server",595,"Button",BS_AUTORADIOBUTTON,12,7,97,10
+    CONTROL         "&client number",596,"Button",BS_AUTORADIOBUTTON,12,27,
+                    61,10
+    EDITTEXT        101,78,26,28,14,ES_NUMBER
+END
+
+LOG DIALOG DISCARDABLE  0, 0, 198, 168
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Log"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",4,7,147,41,14
+    PUSHBUTTON      "Clear",8,60,147,50,14
+    PUSHBUTTON      "&Copy to clipboard",566,120,147,71,14
+    EDITTEXT        101,7,4,184,139,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+END
+
+MSG DIALOG DISCARDABLE  0, 0, 198, 82
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Send message to the other player"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        101,7,3,184,56,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "Send",9,26,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,64,50,14
+END
+
+KEYS DIALOG DISCARDABLE  0, 0, 234, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keyboard shortcuts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Command:",698,7,9,51,8
+    EDITTEXT        172,61,7,144,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      ". . .",130,208,7,19,14
+    LTEXT           "Key:",699,7,33,51,8
+    EDITTEXT        131,61,30,144,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+10                      BITMAP  MOVEABLE PURE   ".\\..\\skins\\pisq.bmp"
+11                      BITMAP  MOVEABLE PURE   "toolbar.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 8,2,0,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040504b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "Piškvorky\0"
+            VALUE "FileVersion", "8, 2, 0, 0\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "© 2000 - 2006  Petr Laštovièka\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "piskvork.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x405, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 273
+        BOTTOMMARGIN, 263
+    END
+
+    "PLAYERS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    "TOURNAMENT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    "RESULT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    "GOTO", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    "CLIENT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    "DISCONNECT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    "LOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    "MSG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
